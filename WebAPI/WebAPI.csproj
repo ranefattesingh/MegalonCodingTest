@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>775019f8-8626-4ff4-967b-dac616c3dd42</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <RootNamespace>RaneFattesingh.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj" />
     <ProjectReference Include="..\Persistance.EntityFramework\Persistance.EntityFramework.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
