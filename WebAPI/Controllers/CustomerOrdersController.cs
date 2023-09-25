@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RaneFattesingh.Service;
+using RaneFattesingh.BAL;
 using WebAPI.ViewModels;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class CustomerController : Controller
+    public class CustomerOrdersController : Controller
     {
-        private readonly ILogger<CustomerController> _logger;
-        private readonly ICustomerService _customerService;
+        private readonly ILogger<CustomerOrdersController> _logger;
+        private readonly ICustomerOrdersService _customerService;
 
-        public CustomerController(ICustomerService customerService, ILogger<CustomerController> logger)
+        public CustomerOrdersController(ICustomerOrdersService customerService, ILogger<CustomerOrdersController> logger)
         {
             _customerService = customerService;
             _logger = logger;

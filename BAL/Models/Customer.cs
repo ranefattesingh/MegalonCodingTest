@@ -1,4 +1,4 @@
-﻿namespace WebAPI.ViewModels
+﻿namespace RaneFattesingh.BAL.Models
 {
     public class Customer
     {

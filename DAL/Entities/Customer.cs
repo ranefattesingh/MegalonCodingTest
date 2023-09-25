@@ -1,4 +1,4 @@
-﻿namespace WebAPI.ViewModels
+﻿namespace RaneFattesingh.DAL.Entities
 {
     public class Customer
     {
