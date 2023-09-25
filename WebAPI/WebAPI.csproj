@@ -18,7 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BAL\BAL.csproj" />
     <ProjectReference Include="..\Persistance.EntityFramework\Persistance.EntityFramework.csproj" />
-    <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 
 </Project>

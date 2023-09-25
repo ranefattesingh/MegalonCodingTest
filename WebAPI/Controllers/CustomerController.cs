@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RaneFattesingh.Service;
+using RaneFattesingh.BAL;
 using WebAPI.ViewModels;
 
 namespace WebAPI.Controllers
@@ -9,9 +9,9 @@ namespace WebAPI.Controllers
     public class CustomerController : Controller
     {
         private readonly ILogger<CustomerController> _logger;
-        private readonly ICustomerService _customerService;
+        private readonly ICustomerOrdersService _customerService;
 
-        public CustomerController(ICustomerService customerService, ILogger<CustomerController> logger)
+        public CustomerController(ICustomerOrdersService customerService, ILogger<CustomerController> logger)
         {
             _customerService = customerService;
             _logger = logger;
