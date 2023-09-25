@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace WebAPI.ViewModels
+﻿namespace WebAPI.ViewModels
 {
     public class Order
     {
@@ -8,6 +6,5 @@ namespace WebAPI.ViewModels
         public string ItemName { get; set; }
         public double ItemPrice { get; set; }
         public Guid CustomerID { get; set; }
-        public Customer Customer { get; set; }
     }
 }

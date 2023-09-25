@@ -5,8 +5,8 @@ namespace RaneFattesingh.DAL
 {
     public class CustomerOrdersRepository : ICustomerOrdersRepository
     {
-        private readonly CustomerContext _context;
-        public CustomerOrdersRepository(CustomerContext context)
+        private readonly CustomerOrdersContext _context;
+        public CustomerOrdersRepository(CustomerOrdersContext context)
         {
             _context = context;
         }

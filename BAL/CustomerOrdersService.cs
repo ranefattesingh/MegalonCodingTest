@@ -5,8 +5,8 @@ namespace RaneFattesingh.BAL
 {
     public class CustomerOrdersService : ICustomerOrdersService
     {
-        private readonly CustomerOrdersRepository _customerOrderRepository;
-        public CustomerOrdersService(CustomerOrdersRepository customerOrderRepository)
+        private readonly ICustomerOrdersRepository _customerOrderRepository;
+        public CustomerOrdersService(ICustomerOrdersRepository customerOrderRepository)
         {
             _customerOrderRepository = customerOrderRepository;
         }

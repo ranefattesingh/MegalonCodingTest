@@ -3,11 +3,11 @@ using RaneFattesingh.Persistance.EntityFramework.Entities;
 
 namespace RaneFattesingh.Persistance.EntityFramework
 {
-    public class CustomerContext : DbContext
+    public class CustomerOrdersContext : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public CustomerContext(DbContextOptions<CustomerContext> options) : base(options)
+        public CustomerOrdersContext(DbContextOptions<CustomerOrdersContext> options) : base(options)
         {
             // Empty
         }

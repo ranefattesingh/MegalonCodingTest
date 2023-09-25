@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace WebAPI.ViewModels
+﻿namespace WebAPI.ViewModels
 {
     public class Customer
     {
