@@ -1,15 +1,15 @@
 using Microsoft.EntityFrameworkCore;
-//using RaneFattesingh.Persistance.EntityFramework;
-//using RaneFattesingh.DAL;
-//using RaneFattesingh.BAL;
+using RaneFattesingh.Persistance.EntityFramework;
+using RaneFattesingh.DAL;
+using RaneFattesingh.BAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-//builder.Services.AddScoped<ICustomerService, CustomerService>();
-//builder.Services.AddDbContext<CustomerContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ICustomerOrdersRepository, CustomerOrdersRepository>();
+builder.Services.AddScoped<ICustomerOrdersService, CustomerOrdersService>();
+builder.Services.AddDbContext<CustomerContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

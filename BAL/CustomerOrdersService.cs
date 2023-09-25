@@ -3,10 +3,10 @@ using RaneFattesingh.DAL;
 
 namespace RaneFattesingh.BAL
 {
-    public class CustomerOrderService : ICustomerOrdersService
+    public class CustomerOrdersService : ICustomerOrdersService
     {
         private readonly CustomerOrdersRepository _customerOrderRepository;
-        public CustomerOrderService(CustomerOrdersRepository customerOrderRepository)
+        public CustomerOrdersService(CustomerOrdersRepository customerOrderRepository)
         {
             _customerOrderRepository = customerOrderRepository;
         }
