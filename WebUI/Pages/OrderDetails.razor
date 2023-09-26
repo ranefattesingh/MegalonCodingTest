@@ -1,0 +1,25 @@
+﻿@page "/orderdetails/{customerID:guid}"
+@inherits OrderDetailsBase
+<PageTitle>Order Details</PageTitle>
+
+<h3><span class="text-uppercase">Order Details</span> for @SelectedCustomerName</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in SelectedCustomerOrders)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.ItemName</td>
+                <td>INR @order.ItemPrice.ToString("N2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
