@@ -1,0 +1,29 @@
+﻿@page "/"
+@inherits CustomerListBase
+
+<PageTitle>Customers</PageTitle>
+
+<h3 class="text-uppercase">Customers</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Date of Birth</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in GetCustomers())
+        {
+            <tr>
+                <td>@customer.CustomerID</td>
+                <td>@customer.FirstName @customer.LastName</td>
+                <td>@customer.DOB.ToString("dd MMMM yyy")</td>
+                <td><a href="@($"/orderdetails/{customer.CustomerID}")">View Orders</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

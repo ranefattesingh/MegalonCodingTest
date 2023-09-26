@@ -2,7 +2,7 @@
 {
     public class CustomerOrders
     {
-        public Customer Customer { get; set; }
-        public IEnumerable<Order> Orders { get; set; }
+        public Customer Customer { get; set; } = new Customer();
+        public IEnumerable<Order> Orders { get; set; } = new List<Order>();
     }
 }
